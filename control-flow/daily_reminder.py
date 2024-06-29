@@ -7,14 +7,14 @@ match priority:
         if time_bound == "yes":
             print(f"{task} is a {priority} priority task that requires immediate attention today!")
         else:
-            print(f"{task} is a {priority} priority task. Consider completing it when you have free time.")
+            print(f"Note: {task} is a {priority} priority task. Consider completing it when you have free time.")
     case "medium":
         if time_bound == "yes":
-            print(f"{task} is a {priority} priority task that requires immediate attention today!")
+            print(f"Reminder: {task} is a {priority} priority task that requires immediate attention today!")
         else:
-            print(f"{task} is a {priority} priority task. Consider completing it when you have free time.")
+            print(f"Note: {task} is a {priority} priority task. Consider completing it when you have free time.")
     case "low":
         if time_bound == "yes":
-            print(f"{task} is a {priority} priority task that requires immediate attention today!")
+            print(f"Reminder: {task} is a {priority} priority task that requires immediate attention today!")
         else:
-            print(f"{task} is a {priority} priority task. Consider completing it when you have free time.")
+            print(f"Note: {task} is a {priority} priority task. Consider completing it when you have free time.")
