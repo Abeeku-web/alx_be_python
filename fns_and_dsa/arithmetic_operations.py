@@ -1,18 +1,16 @@
 def perform_operation(num1,num2,operation):
-    num1 = float(input("Enter first number:"))
-    num2 = float(input("Enter second number:"))
-    operation = input("Choose the operation(+,-,*,/):")
+    
     match operation:
-        case "+":
+        case "add":
             sum = num1 + num2
             print("The result is {sum}.")
-        case "-":
+        case "subtract":
             difference = num1 - num2
             print("The result is {difference}.")
-        case "*":
+        case "multiply":
             product = num1 * num2
             print("The result is {product}.")
-        case "/":
+        case "divide":
             try:
                 division = num1/num2
                 print("The result is {division}.")
