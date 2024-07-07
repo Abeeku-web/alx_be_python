@@ -19,7 +19,7 @@ def perform_operation(num1,num2,operation):
             print(division)
     else:
         print("Invalid opertion entered, please try again.")
-
+return
 
     
     
