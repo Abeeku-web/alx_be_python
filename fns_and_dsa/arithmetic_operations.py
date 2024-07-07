@@ -12,11 +12,11 @@ def perform_operation(num1,num2,operation):
         product = num1 * num2
         print(product)
     elif operation == "divide":
-        try:
+        if num2 == 0:
+            print("Cannot divide by zero.")
+        else:
             division = num1/num2
             print(division)
-        except ZeroDivisionError:
-            print("Cannot divide by zero")
     else:
         print("Invalid opertion entered, please try again.")
 
