@@ -12,4 +12,25 @@ def main():
         choice = input("Enter your choice:")
 
         if choice == "1":
-            prompt = input("Please select an item to add to your cart:")
+            selection = input("Please select an item to add to your cart:")
+            shopping_list.append(item)
+            print(f"{selection} has been added to the shopping list.")
+        elif choice == "2":
+            selection = input("Select an item to remove:")
+            if selection in shopping_list:
+                print(f"{selection} has been removed from the shopping list.")
+        elif choice == "3":
+            if shopping_list:
+                print("Current shopping list.")
+                for i, selection in enumerate(shopping_list, start=1):
+                    print(f"{i}. {selection}")
+            else:
+                print("The shopping list is empty.")
+        elif choice == "4":
+            print("Goodbye!")
+            break
+        else:
+            print("Invalid choice. Please try again.")
+
+if __name__ == "__main__":
+    main()
