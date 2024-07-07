@@ -18,6 +18,6 @@ def perform_operation(num1,num2,operation=None):
                 print(division)
             except ZeroDivisionError:
                 print("Cannot divide by zero")
-perform_operation(10,0,"divide")
+perform_operation(10,5,"divide")
 
  
